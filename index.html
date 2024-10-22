@@ -56,6 +56,17 @@
             align-items: center;
             text-align: center; /* Center the entire block within the page */
         }
+    /* Keyframe animation to blink */
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    /* Applying the blink animation to the <li> */
+    .blinking {
+        animation: blink 1s infinite;
+    }
   </style>
 
 </head> 
@@ -184,9 +195,11 @@
 					<li><i class="fa-regular fa-newspaper me-2"></i>Invited contributions have to provide a long paper.</li>
 					<li><i class="fa-regular fa-newspaper  me-2"></i>Long papers will be six pages of content and unlimited references in the ECAI 2024 formatting style.</li>
 					<li><i class="fa-regular fa-newspaper  me-2"></i>Extended abstracts will be two pages in ECAI 2024 formatting style.</li>
-					<li><i class="fa-regular fa-newspaper  me-2"></i>Selected papers and invited contributions will be considered for possible inclusion in a special issue of <a target="_blank" rel="noopener noreferrer" href="https://content.iospress.com/journals/ai-communications/Pre-press/Pre-press">AI Communications</a>.</li>
+					<li><i class="fa-regular fa-newspaper  me-2 blinking"></i>Selected papers and invited contributions will be considered for possible inclusion in a special issue of <a target="_blank" rel="noopener noreferrer" href="https://www.aicommunications.eu/">The European Journal on Artificial Intelligence</a>.</li>
 				</ul>
 			</div><!--//benefits-list-->
+			<div class="sponsors-cta text-center pt-5"><a class="btn-primary btn btn-lg" href="assets/EJAI_WHAI_CFP.pdf">Access the CFP for European Journal on Artificial Intelligence</a></div>
+				<br>
 			<div class="benefits-list text-center mb-3">
 				<h4 class="text-center mb-4">Key Dates</h4>
 				<ul class="list-unstyled text-start d-inline-block">
@@ -194,12 +207,10 @@
 					<li><i class="fa-regular fa-calendar me-2"></i>Author notification  July 1, 2024</li>
 					<li><i class="fa-regular fa-calendar me-2"></i>Camera Ready  August 22, 2024</li>
 					<li><i class="fa-regular fa-calendar me-2"></i>Workshop  October 20 (14pm session), 2024</li>
+					<li><i class="fa-regular fa-calendar me-2 blinking"></i>Paper submission for European Journal on Artificial Intelligence  February 28, 2025</li>
 				</ul>
 			</div><!--//benefits-list-->
-			<div class="event-countdown text-center mb-3">		   
-				<h4 class="countdown-intro mb-2 text-center mb-3">Event Starts In:</h4>
-				<div id="countdown-box" class="countdown-box"></div>
-			</div><!--//event-countdown-->
+
 		</div><!--//container-->
 <!--
 		<div class="media-block theme-bg-primary py-5">
